@@ -39,12 +39,15 @@ public class MainActivity extends ActionBarActivity {
                     case 0:
                         Intent intent = new Intent(MainActivity.this, threeGridActivity.class);
                         MainActivity.this.startActivity(intent);
+						break;
                     case 1:
                          intent = new Intent(MainActivity.this, fourGridActivity.class);
                         MainActivity.this.startActivity(intent);
+						break;
                     case 2:
                          intent = new Intent(MainActivity.this, fiveGridActivity.class);
                         MainActivity.this.startActivity(intent);
+						break;
                 }
                 alertDialog1.dismiss();
             }
