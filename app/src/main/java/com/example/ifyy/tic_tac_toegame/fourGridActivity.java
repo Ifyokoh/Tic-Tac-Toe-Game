@@ -1,12 +1,23 @@
+/*Copyright 2018 The Android Open Project
+* Licensed under the Apache License, Version 2.0 (the "Licence");
+* You may not use this file except in compliance with the License.
+* You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the Licence is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the Licence for the specific language governing permissions and
+* limitations under the Licence*/
+
 package com.example.ifyy.tic_tac_toegame;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class fourGridActivity extends ActionBarActivity implements View.OnClickListener{
+//constructs a new class showing game between two players for 4 x 4
+public class fourGridActivity extends AppCompatActivity implements View.OnClickListener{
 
         boolean PLAYER_X = true;
 
@@ -308,6 +319,7 @@ public class fourGridActivity extends ActionBarActivity implements View.OnClickL
                 }
         }
 
+        //checks when a player wins or loose depending on position
         private void checkWinner(){
 
                 //Horizontal --- rows
@@ -359,6 +371,8 @@ public class fourGridActivity extends ActionBarActivity implements View.OnClickL
                 }
         }
 
+        //stops the players from continuing playing on the board
+        // once the game is over, and allows it once the board is reset
         private void enableAllBoxes(boolean value){
                 box1.setEnabled(value);
                 box2.setEnabled(value);
@@ -378,11 +392,13 @@ public class fourGridActivity extends ActionBarActivity implements View.OnClickL
                 box16.setEnabled(value);
         }
 
+        //outputs status when a player wins or loose
         private void result(String winner){
                 setInfo(winner);
                 enableAllBoxes(false);
         }
 
+        // This method resets the board
         private void resetBoard(){
                 box1.setText("");
                 box2.setText("");
@@ -412,10 +428,12 @@ public class fourGridActivity extends ActionBarActivity implements View.OnClickL
 
         }
 
+        //adds text of win or draw to the status textview
         private void setInfo(String text){
                 status.setText(text);
         }
 
+        //changes the board to initial state once it's reset
         private void initializeBoardStatus(){
                 for(int i = 0; i < 4; i++){
                         for(int j = 0; j < 4; j++){

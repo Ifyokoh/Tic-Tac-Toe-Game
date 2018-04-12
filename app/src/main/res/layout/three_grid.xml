@@ -42,6 +42,7 @@
                 android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:layout_margin="8dp"
+                android:onClick="btn"
                 />
 
             <Button
@@ -52,6 +53,7 @@
                 android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:layout_margin="8dp"
+                android:onClick="btn"
                 />
 
             <Button
@@ -62,6 +64,7 @@
                 android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:layout_margin="8dp"
+                android:onClick="btn"
                 />
 
         </TableRow>
@@ -76,6 +79,7 @@
                 android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:layout_margin="8dp"
+                android:onClick="btn"
                 />
 
             <Button
@@ -86,6 +90,7 @@
                 android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:layout_margin="8dp"
+                android:onClick="btn"
                 />
 
             <Button
@@ -96,6 +101,7 @@
                 android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:layout_margin="8dp"
+                android:onClick="btn"
                 />
 
         </TableRow>
@@ -110,6 +116,7 @@
                 android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:layout_margin="8dp"
+                android:onClick="btn"
                 />
 
             <Button
@@ -120,6 +127,7 @@
                 android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:layout_margin="8dp"
+                android:onClick="btn"
                 />
 
             <Button
@@ -130,6 +138,7 @@
                 android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:layout_margin="8dp"
+                android:onClick="btn"
                 />
 
         </TableRow>
@@ -145,6 +154,7 @@
         android:layout_margin="16dp"
         android:padding="8dp"
         android:text="RESET"
+        android:onClick="reset"
         android:textSize="18sp"
         android:textColor="#FFFFFF"
         android:background="@color/button"
